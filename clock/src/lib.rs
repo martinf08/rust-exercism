@@ -36,7 +36,7 @@ impl Clock {
 
         let mut minutes = total_minutes % 60;
         if minutes.is_negative() {
-            let sub_hours = (minutes / 60) - 1;
+            let sub_hours = minutes / 60 - 1;
             hours += sub_hours;
             minutes = 60 + minutes;
         }
